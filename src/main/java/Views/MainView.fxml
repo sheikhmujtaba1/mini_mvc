@@ -8,18 +8,17 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane prefHeight="477.0" prefWidth="337.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
+<BorderPane prefHeight="477.0" prefWidth="337.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.MainController">
    <top>
       <HBox alignment="CENTER" prefHeight="82.0" prefWidth="341.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField promptText="Enter number" />
-            <TextField promptText="Enter number" />
+            <TextField fx:id="FnumTextField" promptText="Enter number" />
+            <TextField fx:id="SnumTextField" promptText="Enter number" />
          </children>
       </HBox>
    </top>
    <center>
-      <Button mnemonicParsing="false" text="Add" BorderPane.alignment="CENTER">
+      <Button mnemonicParsing="false" onAction="#OnAdd" text="Add" BorderPane.alignment="CENTER">
          <font>
             <Font size="28.0" />
          </font>
@@ -33,7 +32,7 @@
                   <Font size="41.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" text="0" textAlignment="CENTER">
+            <Label fx:id="SumLabel" alignment="CENTER" text="0" textAlignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>
