@@ -16,7 +16,7 @@ public class Main extends Application
 	{
 		
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(Main.class.getResource("Views/MainView.fxml"));
+		loader.setLocation(Main.class.getResource("../Views/MainView.fxml"));
 		
 		BorderPane view = loader.load();
 		MainController cont = loader.getController();
