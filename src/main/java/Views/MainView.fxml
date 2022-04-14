@@ -12,13 +12,13 @@
    <top>
       <HBox alignment="CENTER" prefHeight="82.0" prefWidth="341.0" BorderPane.alignment="CENTER">
          <children>
-            <TextField fx:id="FnumTextField" promptText="Enter number" />
-            <TextField fx:id="SnumTextField" promptText="Enter number" />
+            <TextField id="enternum1" fx:id="FnumTextField" promptText="Enter number" />
+            <TextField id="enternum2" fx:id="SnumTextField" promptText="Enter number" />
          </children>
       </HBox>
    </top>
    <center>
-      <Button mnemonicParsing="false" onAction="#OnAdd" text="Add" BorderPane.alignment="CENTER">
+      <Button id="addnumsbutton" mnemonicParsing="false" onAction="#OnAdd" text="Add" BorderPane.alignment="CENTER">
          <font>
             <Font size="28.0" />
          </font>
@@ -32,7 +32,7 @@
                   <Font size="41.0" />
                </font>
             </Label>
-            <Label fx:id="SumLabel" alignment="CENTER" text="0" textAlignment="CENTER">
+            <Label id="displaynum" fx:id="SumLabel" alignment="CENTER" text="0" textAlignment="CENTER">
                <font>
                   <Font size="38.0" />
                </font>

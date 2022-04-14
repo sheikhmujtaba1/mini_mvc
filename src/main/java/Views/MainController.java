@@ -50,8 +50,9 @@ public class MainController
 		}
 		catch(NumberFormatException e)
 		{
-			FnumTextField.accessibleTextProperty().set("");
+			FnumTextField.textProperty().set("");
 		}
+		FnumTextField.textProperty().set("");
 		return amt;
 	}
 	private double getnum2()
@@ -64,8 +65,9 @@ public class MainController
 		}
 		catch(NumberFormatException e)
 		{
-			SnumTextField.accessibleTextProperty().set("");
+			SnumTextField.textProperty().set("");
 		}
+		SnumTextField.textProperty().set("");
 		return amt;
 	}
 }

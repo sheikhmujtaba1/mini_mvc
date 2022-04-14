@@ -1,3 +1,5 @@
+package main;
+
 import Views.MainController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

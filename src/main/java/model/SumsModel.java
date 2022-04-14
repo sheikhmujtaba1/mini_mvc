@@ -19,6 +19,7 @@ public class SumsModel
 
 	public SumsModel()
 	{
+		
 	}
 	
 	public void add_nums(double num1, double num2)
